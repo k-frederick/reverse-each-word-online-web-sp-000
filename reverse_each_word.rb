@@ -6,9 +6,13 @@
 #   sentence1_split.join(" ")
 # end
 
-def reverse_each_word(sentence1)
-  sentence1_split = sentence1.split(" ")
-  sentence1_split.collect do |word|
-    word.reverse
-  end.join(" ")
+#def reverse_each_word(sentence1)
+  #sentence1_split = sentence1.split(" ")
+#  sentence1_split.collect do |word|
+  #  word.reverse
+#  end.join(" ")
+#end
+
+def reverse_each_word(string)
+  string.split(" ").map{|word| word.reverse}.join(" ")
 end
